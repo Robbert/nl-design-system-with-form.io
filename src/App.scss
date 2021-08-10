@@ -7,3 +7,24 @@
 footer {
   margin-top: auto;
 }
+
+body {
+  --theme-switcher-box-size: 50px;
+  padding-block-start: calc(var(--theme-switcher-box-size) * 1.2);
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--theme-switcher-box-size);
+  background: white;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  background-color: #eee;
+  font-family: system-ui;
+  z-index: 1000;
+}

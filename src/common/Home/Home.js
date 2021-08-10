@@ -1,6 +1,7 @@
 import React from 'react';
-import Hero from '../Hero/Hero';
+import { Form } from 'react-formio';
 import { useAuth } from '../../modules/auth';
+import { AppConfig } from '../../config';
 
 const Home = () => {
   const { state: authState } = useAuth();
@@ -17,7 +18,6 @@ const Home = () => {
 
   return (
     <div>
-      <Hero/>
       <div className="container">
         { authState.authenticated ? (
           <div className="well text-center">
@@ -25,6 +25,7 @@ const Home = () => {
           </div>)
           : null
         }
+        <Form src={`${AppConfig.projectUrl}/test`} />
       </div>
     </div>
   );

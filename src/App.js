@@ -8,6 +8,8 @@ import { AppConfig } from './config';
 import './App.scss';
 import EventsPage from './modules/events/components/EventsPage';
 import { Alerts, AlertsProvider } from './modules/alerts';
+// import '@utrecht/component-library-css/dist/index.css';
+import './utrecht.css';
 
 function App() {
   const { dispatch, state: { isActive } } = useAuth();
@@ -30,7 +32,28 @@ function App() {
           : null
       }
       <div className="App">
-        <Header/>
+		    <link
+		      rel="stylesheet"
+		      href="https://unpkg.com/@nl-design-system-unstable/amsterdam-design-tokens/dist/theme/index.css"
+		    />
+		    <link
+		      rel="stylesheet"
+		      href="https://unpkg.com/@nl-design-system-unstable/rijkshuisstijl-design-tokens/dist/theme/index.css"
+		    />
+		    <link
+		      rel="stylesheet"
+		      href="https://unpkg.com/@nl-design-system-unstable/duo-design-tokens/dist/theme/index.css"
+		    />
+		    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@utrecht/design-tokens/dist/theme/index.css" />
+		    <div class="theme-switcher">
+		      <label for="">Theme:</label>
+		      <select onChange={(evt) => document.documentElement.className = evt.target.value}>
+		        <option value="duo-theme">DUO</option>
+		        <option value="amsterdam-theme">Gemeente Amsterdam</option>
+		        <option value="utrecht-theme" selected>Gemeente Utrecht</option>
+		      </select>
+		    </div>
+
         <AlertsProvider>
           <Alerts/>
           <div className="container" id="main">
