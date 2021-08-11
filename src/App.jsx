@@ -3,6 +3,7 @@ import { AppConfig } from "./config";
 import { Form, initAuth } from "react-formio";
 import { useAuth } from "./modules/auth";
 import { Loading, Modal } from "./common";
+import { UtrechtDocument, UtrechtHeading1, UtrechtPageFooter } from "@utrecht/web-component-library-react";
 import "./App.scss";
 
 function App() {
@@ -15,6 +16,27 @@ function App() {
     initAuth()(dispatch);
   }, [dispatch]);
 
+  useEffect(() => {
+    /*
+     * ./node_modules/@utrecht/web-component-library-stencil/dist/utrecht/utrecht.esm.js 3:18
+     * Module parse failed: Unexpected token (3:18)
+     * File was processed with these loaders:
+     *  * ./node_modules/babel-loader/lib/index.js
+     * You may need an additional loader to handle the result of these loaders.
+     * | import { p as e, b as t } from "./p-3048cba9.js";
+     * | (() => {
+     * >   const t = import.meta.url,
+     * |         a = {};
+     * |   return "" !== t && (a.resourcesUrl = new URL(".", t).href), e(a);
+     */
+    // import("@utrecht/web-component-library-stencil/dist/utrecht/utrecht.esm.js");
+
+    const script = document.createElement("script");
+    script.src = "https://unpkg.com/@utrecht/web-component-library-stencil@latest/dist/utrecht/utrecht.esm.js";
+    script.type = "module";
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <>
       {isActive ? (
@@ -25,7 +47,8 @@ function App() {
           </div>
         </Modal>
       ) : null}
-      <div className="App utrecht-document">
+      <UtrechtDocument>
+        <UtrechtHeading1>NL Design System with form.io</UtrechtHeading1>
         <link
           rel="stylesheet"
           href="https://unpkg.com/@nl-design-system-unstable/amsterdam-design-tokens/dist/theme/index.css"
@@ -50,7 +73,8 @@ function App() {
           </select>
         </div>
         <Form src={`${AppConfig.projectUrl}/test`} />
-      </div>
+        <UtrechtPageFooter>© 2021 Robbert Broersma</UtrechtPageFooter>
+      </UtrechtDocument>
     </>
   );
 }
