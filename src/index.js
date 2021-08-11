@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import './config';
 import { AuthProvider } from './modules/auth';
 import { components, templates } from './components/index';
+import '@utrecht/component-library-css/dist/bem.css';
+import '@utrecht/design-tokens/dist/index.css';
 
 Formio.use({ components });
 Templates.current = templates;

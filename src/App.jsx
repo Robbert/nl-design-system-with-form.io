@@ -4,8 +4,6 @@ import { Form, initAuth } from "react-formio";
 import { useAuth } from "./modules/auth";
 import { Loading, Modal } from "./common";
 import "./App.scss";
-import "@utrecht/component-library-css/dist/bem.css";
-import "@utrecht/design-tokens/dist/index.css";
 
 function App() {
   const {
@@ -27,7 +25,7 @@ function App() {
           </div>
         </Modal>
       ) : null}
-      <div className="App">
+      <div className="App utrecht-document">
         <link
           rel="stylesheet"
           href="https://unpkg.com/@nl-design-system-unstable/amsterdam-design-tokens/dist/theme/index.css"
