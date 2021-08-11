@@ -6,6 +6,6 @@ export const pick = (object, props) => {
       picked[prop] = object[prop];
     }
   });
-  
+
   return picked;
 };

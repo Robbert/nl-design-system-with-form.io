@@ -78,17 +78,13 @@
       "access": [
         {
           "type": "read_all",
-          "roles": [
-            "anonymous"
-          ]
+          "roles": ["anonymous"]
         }
       ],
       "submissionAccess": [
         {
           "type": "create_own",
-          "roles": [
-            "anonymous"
-          ]
+          "roles": ["anonymous"]
         }
       ]
     },
@@ -221,17 +217,13 @@
       "access": [
         {
           "type": "read_all",
-          "roles": [
-            "anonymous"
-          ]
+          "roles": ["anonymous"]
         }
       ],
       "submissionAccess": [
         {
           "type": "create_own",
-          "roles": [
-            "anonymous"
-          ]
+          "roles": ["anonymous"]
         }
       ]
     }
@@ -242,13 +234,8 @@
       "name": "save",
       "form": "user",
       "priority": 10,
-      "method": [
-        "create",
-        "update"
-      ],
-      "handler": [
-        "before"
-      ]
+      "method": ["create", "update"],
+      "handler": ["before"]
     },
     "user:userRole": {
       "title": "Role Assignment",
@@ -260,25 +247,16 @@
         "role": "authenticated"
       },
       "priority": 1,
-      "method": [
-        "create"
-      ],
-      "handler": [
-        "after"
-      ]
+      "method": ["create"],
+      "handler": ["after"]
     },
     "admin:adminSave": {
       "title": "Save Submission",
       "name": "save",
       "form": "admin",
       "priority": 10,
-      "method": [
-        "create",
-        "update"
-      ],
-      "handler": [
-        "before"
-      ]
+      "method": ["create", "update"],
+      "handler": ["before"]
     },
     "admin:adminRole": {
       "title": "Role Assignment",
@@ -290,12 +268,8 @@
         "role": "administrator"
       },
       "priority": 1,
-      "method": [
-        "create"
-      ],
-      "handler": [
-        "after"
-      ]
+      "method": ["create"],
+      "handler": ["after"]
     },
     "userLogin:userLogin": {
       "title": "Login",
@@ -304,18 +278,11 @@
       "settings": {
         "password": "password",
         "username": "email",
-        "resources": [
-          "user",
-          "admin"
-        ]
+        "resources": ["user", "admin"]
       },
       "priority": 2,
-      "method": [
-        "create"
-      ],
-      "handler": [
-        "before"
-      ]
+      "method": ["create"],
+      "handler": ["before"]
     },
     "userRegister:userRegisterSave": {
       "title": "Save Submission",
@@ -332,12 +299,8 @@
         "resource": "user"
       },
       "priority": 11,
-      "method": [
-        "create"
-      ],
-      "handler": [
-        "before"
-      ]
+      "method": ["create"],
+      "handler": ["before"]
     },
     "userRegister:userRegisterLogin": {
       "title": "Login",
@@ -346,43 +309,27 @@
       "settings": {
         "password": "password",
         "username": "email",
-        "resources": [
-          "user"
-        ]
+        "resources": ["user"]
       },
       "priority": 2,
-      "method": [
-        "create"
-      ],
-      "handler": [
-        "before"
-      ]
+      "method": ["create"],
+      "handler": ["before"]
     },
     "event:save": {
       "title": "Save Submission",
       "name": "save",
       "form": "event",
       "priority": 10,
-      "method": [
-        "create",
-        "update"
-      ],
-      "handler": [
-        "before"
-      ]
+      "method": ["create", "update"],
+      "handler": ["before"]
     },
     "activity:save": {
       "title": "Save Submission",
       "name": "save",
       "form": "activity",
       "priority": 10,
-      "method": [
-        "create",
-        "update"
-      ],
-      "handler": [
-        "before"
-      ]
+      "method": ["create", "update"],
+      "handler": ["before"]
     }
   },
   "resources": {
@@ -439,37 +386,25 @@
       "access": [
         {
           "type": "read_all",
-          "roles": [
-            "anonymous",
-            "authenticated",
-            "administrator"
-          ]
+          "roles": ["anonymous", "authenticated", "administrator"]
         }
       ],
       "submissionAccess": [
         {
           "type": "create_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "read_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "update_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "delete_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "create_own",
@@ -612,37 +547,25 @@
       "access": [
         {
           "type": "read_all",
-          "roles": [
-            "anonymous",
-            "authenticated",
-            "administrator"
-          ]
+          "roles": ["anonymous", "authenticated", "administrator"]
         }
       ],
       "submissionAccess": [
         {
           "type": "create_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "read_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "update_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "delete_all",
-          "roles": [
-            "administrator"
-          ]
+          "roles": ["administrator"]
         },
         {
           "type": "create_own",
@@ -867,11 +790,7 @@
         },
         {
           "type": "read_all",
-          "roles": [
-            "administrator",
-            "authenticated",
-            "anonymous"
-          ]
+          "roles": ["administrator", "authenticated", "anonymous"]
         },
         {
           "type": "update_all",
@@ -929,27 +848,19 @@
         },
         {
           "type": "create_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "read_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "update_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "delete_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "team_read",
@@ -1085,11 +996,7 @@
         },
         {
           "type": "read_all",
-          "roles": [
-            "administrator",
-            "authenticated",
-            "anonymous"
-          ]
+          "roles": ["administrator", "authenticated", "anonymous"]
         },
         {
           "type": "update_all",
@@ -1147,27 +1054,19 @@
         },
         {
           "type": "create_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "read_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "update_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "delete_own",
-          "roles": [
-            "authenticated"
-          ]
+          "roles": ["authenticated"]
         },
         {
           "type": "team_read",

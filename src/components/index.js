@@ -35,7 +35,7 @@ export const components = {
 };
 
 export const templates = {
-	checkbox: { form: FormioCheckboxTemplate },
+  checkbox: { form: FormioCheckboxTemplate },
   fieldset: { form: FormioFieldsetTemplate },
   label: { form: FormioFormLabelTemplate },
   radio: { form: FormioRadioButtonTemplate },

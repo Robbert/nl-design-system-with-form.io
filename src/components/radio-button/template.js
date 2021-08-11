@@ -38,4 +38,4 @@ export default `<div
     </label>
   </div>
   {% }) %}
-</div>`
+</div>`;

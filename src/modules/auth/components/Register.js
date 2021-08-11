@@ -17,13 +17,8 @@ const Register = (props) => {
 
   return (
     <>
-      <Form
-        {...props}
-        src={registerFormUrl}
-        onSubmitDone={onSubmitDone}
-        formReady={onFormReady}
-      />
-      { isReady ? null : <Loading /> }
+      <Form {...props} src={registerFormUrl} onSubmitDone={onSubmitDone} formReady={onFormReady} />
+      {isReady ? null : <Loading />}
     </>
   );
 };

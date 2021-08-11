@@ -1,8 +1,8 @@
 import { Formio } from 'react-formio';
 
 export default class FormioCurrency extends Formio.Components.components.currency {
-	get className() {
-    return "utrecht-form-field-textbox utrecht-form-field-textbox--distanced";
+  get className() {
+    return 'utrecht-form-field-textbox utrecht-form-field-textbox--distanced';
   }
 
   get inputInfo() {

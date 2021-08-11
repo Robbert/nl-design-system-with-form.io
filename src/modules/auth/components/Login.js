@@ -18,13 +18,8 @@ const Login = (props) => {
 
   return (
     <>
-      <Form
-        {...props}
-        src={loginFormUrl}
-        onSubmitDone={onSubmitDone}
-        formReady={onFormReady}
-      />
-      { isReady ? null : <Loading /> }
+      <Form {...props} src={loginFormUrl} onSubmitDone={onSubmitDone} formReady={onFormReady} />
+      {isReady ? null : <Loading />}
     </>
   );
 };

@@ -6,9 +6,9 @@ const Loading = (props) => {
       width: '60px',
       height: '60px',
       marginLeft: 'calc(50% - 60px)',
-      marginTop: '40px'
+      marginTop: '40px',
     },
-    textClass
+    textClass,
   } = props;
 
   return (

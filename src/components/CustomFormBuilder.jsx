@@ -1,5 +1,5 @@
-import React from 'react';
-import FormBuilder from 'react-formio/lib/components/FormBuilder';
+import React from "react";
+import FormBuilder from "react-formio/lib/components/FormBuilder";
 
 class CustomFormBuilderCompnent extends FormBuilder {
   constructor(props) {
@@ -7,9 +7,7 @@ class CustomFormBuilderCompnent extends FormBuilder {
   }
 
   render() {
-    return (<div>
-      {super.render()}
-    </div>)
+    return <div>{super.render()}</div>;
   }
 }
 
