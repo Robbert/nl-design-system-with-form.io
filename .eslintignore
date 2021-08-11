@@ -4,3 +4,7 @@ node_modules/
 # Ignore generated files
 dist/
 build/
+
+# Ignore test files until we have configured the correct ESLint plugin
+*.test.js
+*.test.jsx
