@@ -8,8 +8,8 @@ import { AppConfig } from './config';
 import './App.scss';
 import EventsPage from './modules/events/components/EventsPage';
 import { Alerts, AlertsProvider } from './modules/alerts';
-// import '@utrecht/component-library-css/dist/index.css';
-import './utrecht.css';
+import '@utrecht/component-library-css/dist/bem.css';
+import '@utrecht/design-tokens/dist/index.css';
 
 function App() {
   const { dispatch, state: { isActive } } = useAuth();

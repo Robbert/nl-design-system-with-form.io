@@ -43,7 +43,8 @@
     ]
   },
   "devDependencies": {
-    "@utrecht/component-library-css": "^1.0.0-alpha.43",
+    "@utrecht/component-library-css": "1.0.0-alpha.44",
+    "@utrecht/design-tokens": "1.0.0-alpha.37",
     "sass": "^1.37.5"
   }
 }
