@@ -2,12 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import { Formio, Templates } from 'react-formio';
-import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './config';
 import { AuthProvider } from './modules/auth';
-import { components, templates } from './components/index'
+import { components, templates } from './components/index';
 
 Formio.use({ components });
 Templates.current = templates;
@@ -20,7 +19,7 @@ ReactDOM.render(
       </Router>
     </AuthProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
