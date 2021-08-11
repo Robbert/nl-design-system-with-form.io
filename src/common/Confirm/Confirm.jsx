@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Confirm = (props) => {
-  const { onYes, onNo, message, yesText = 'Yes', noText = 'No' } = props;
+  const { onYes, onNo, message, yesText = "Yes", noText = "No" } = props;
 
   return (
     <div className="mt-4">

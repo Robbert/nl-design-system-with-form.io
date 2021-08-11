@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Form, setUser } from 'react-formio';
-import { Loading } from '../../../common';
-import { AppConfig, AuthConfig } from '../../../config';
-import { useAuth } from '../authContext';
+import React, { useState } from "react";
+import { Form, setUser } from "react-formio";
+import { Loading } from "../../../common";
+import { AppConfig, AuthConfig } from "../../../config";
+import { useAuth } from "../authContext";
 
 const Register = (props) => {
   const { dispatch } = useAuth();

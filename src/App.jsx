@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import { AppConfig } from './config';
-import { Form, initAuth } from 'react-formio';
-import { useAuth } from './modules/auth';
-import { Loading, Modal } from './common';
-import './App.scss';
-import '@utrecht/component-library-css/dist/bem.css';
-import '@utrecht/design-tokens/dist/index.css';
+import React, { useEffect } from "react";
+import { AppConfig } from "./config";
+import { Form, initAuth } from "react-formio";
+import { useAuth } from "./modules/auth";
+import { Loading, Modal } from "./common";
+import "./App.scss";
+import "@utrecht/component-library-css/dist/bem.css";
+import "@utrecht/design-tokens/dist/index.css";
 
 function App() {
   const {
@@ -22,7 +22,7 @@ function App() {
       {isActive ? (
         <Modal className="alert alert-info">
           <div className="d-flex flex-column align-items-center">
-            <Loading style={{ marginBottom: ' 10px' }} />
+            <Loading style={{ marginBottom: " 10px" }} />
             Logging In...
           </div>
         </Modal>

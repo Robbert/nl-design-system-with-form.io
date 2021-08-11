@@ -1,12 +1,12 @@
-import React from 'react';
-import Login from './Login';
-import Register from './Register';
-import { AppConfig } from '../../../config';
+import React from "react";
+import Login from "./Login";
+import Register from "./Register";
+import { AppConfig } from "../../../config";
 
 const AuthPage = () => {
   return (
     <div className="row">
-      {AppConfig.projectUrl !== 'https://reactstarter.form.io' ? (
+      {AppConfig.projectUrl !== "https://reactstarter.form.io" ? (
         <div className="col-md-12">
           <div className="alert alert-warning">
             You can register a regular user here. To register an Admin user, go to your project in the form.io portal,
