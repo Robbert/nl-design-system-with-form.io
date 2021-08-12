@@ -31,8 +31,7 @@ export const AuthConfig = {
   },
 };
 
-export const CustomTags = ['utrecht-button']
-
+export const CustomTags = ['utrecht-button'];
 
 Formio.setProjectUrl(AppConfig.projectUrl);
 Formio.setBaseUrl(AppConfig.apiUrl);
