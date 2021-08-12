@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { AppConfig } from "./config";
+import {AppConfig, CustomTags} from "./config";
 import { Form, initAuth } from "react-formio";
 import { useAuth } from "./modules/auth";
 import { Loading, Modal } from "./common";
@@ -72,7 +72,7 @@ function App() {
             </option>
           </select>
         </div>
-        <Form src={`${AppConfig.projectUrl}/test`} />
+        <Form src={`${AppConfig.projectUrl}/test`} options={{sanitizeConfig: {addTags: CustomTags}}} />
         <UtrechtPageFooter>© 2021 Robbert Broersma</UtrechtPageFooter>
       </UtrechtDocument>
     </>

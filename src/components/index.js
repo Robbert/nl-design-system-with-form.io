@@ -1,4 +1,5 @@
 import FormioButton from './button/index';
+import FormioButtonTemplate from './button/template';
 import FormioCheckbox from './checkbox/index';
 import FormioCheckboxTemplate from './checkbox/template';
 import FormioCurrency from './currency/index';
@@ -35,6 +36,7 @@ export const components = {
 };
 
 export const templates = {
+  button: { form: FormioButtonTemplate },
   checkbox: { form: FormioCheckboxTemplate },
   fieldset: { form: FormioFieldsetTemplate },
   label: { form: FormioFormLabelTemplate },
