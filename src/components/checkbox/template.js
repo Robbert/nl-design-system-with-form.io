@@ -1,6 +1,6 @@
 // https://github.com/formio/formio.js/blob/c107d1ae4989bc5bbc6dcc706bcaf2476130c83f/src/templates/bootstrap/checkbox/form.ejs
 
-export default `<div class="utrecht-form-field" data-class="form-check checkbox">
+export const htmlComponent = `<div class="utrecht-form-field" data-class="form-check checkbox">
   <label data-class="{{ctx.input.labelClass}} form-check-label">
     <{{ctx.input.type}}
       ref="input"
@@ -21,3 +21,10 @@ export default `<div class="utrecht-form-field" data-class="form-check checkbox"
     </{{ctx.input.type}}>
   </label>
 </div>`;
+
+export const webComponent = `<utrecht-form-field-checkbox ref="input"
+{% if (ctx.checked) { %}checked="true"{% } %}
+required="{{ctx.component.validate.required}}"
+>{% if (!ctx.self.labelIsHidden()) { %}{{ctx.input.label}}{% } %}</utrecht-form-field-checkbox>`;
+
+export default webComponent;
