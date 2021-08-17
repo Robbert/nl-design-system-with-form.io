@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@utrecht/component-library-css": "1.0.0-alpha.47",
+    "@utrecht/component-library-formio": "1.0.0-alpha.1",
     "@utrecht/design-tokens": "1.0.0-alpha.40",
     "@utrecht/web-component-library-react": "1.0.0-alpha.46",
     "@utrecht/web-component-library-stencil": "1.0.0-alpha.46",
