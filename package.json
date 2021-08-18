@@ -49,11 +49,11 @@
     ]
   },
   "devDependencies": {
-    "@utrecht/component-library-css": "1.0.0-alpha.47",
-    "@utrecht/component-library-formio": "1.0.0-alpha.1",
-    "@utrecht/design-tokens": "1.0.0-alpha.40",
-    "@utrecht/web-component-library-react": "1.0.0-alpha.46",
-    "@utrecht/web-component-library-stencil": "1.0.0-alpha.46",
+    "@utrecht/component-library-css": "1.0.0-alpha.63",
+    "@utrecht/component-library-formio": "1.0.0-alpha.4",
+    "@utrecht/design-tokens": "1.0.0-alpha.56",
+    "@utrecht/web-component-library-react": "1.0.0-alpha.62",
+    "@utrecht/web-component-library-stencil": "1.0.0-alpha.62",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-json": "3.1.0",

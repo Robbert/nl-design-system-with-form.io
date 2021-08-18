@@ -31,38 +31,5 @@ export const AuthConfig = {
   },
 };
 
-export const CustomTags = [
-  'utrecht-article',
-  'utrecht-badge-counter',
-  'utrecht-badge-data',
-  'utrecht-badge-status',
-  'utrecht-breadcrumb',
-  'utrecht-button',
-  'utrecht-checkbox',
-  'utrecht-document',
-  'utrecht-form-field-checkbox',
-  'utrecht-form-field-textbox',
-  'utrecht-heading',
-  'utrecht-heading-1',
-  'utrecht-heading-2',
-  'utrecht-heading-3',
-  'utrecht-heading-4',
-  'utrecht-heading-5',
-  'utrecht-heading-6',
-  'utrecht-html-content',
-  'utrecht-icon-facebook',
-  'utrecht-icon-instagram',
-  'utrecht-icon-linkedin',
-  'utrecht-icon-twitter',
-  'utrecht-icon-whatsapp',
-  'utrecht-logo',
-  'utrecht-page-footer',
-  'utrecht-pagination',
-  'utrecht-paragraph',
-  'utrecht-separator',
-  'utrecht-sidenav',
-  'utrecht-textbox',
-];
-
 Formio.setProjectUrl(AppConfig.projectUrl);
 Formio.setBaseUrl(AppConfig.apiUrl);
