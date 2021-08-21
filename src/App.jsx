@@ -68,6 +68,7 @@ function App() {
           <select id="theme" onChange={(evt) => (document.documentElement.className = evt.target.value)}>
             <option value="duo-theme">DUO</option>
             <option value="amsterdam-theme">Gemeente Amsterdam</option>
+            <option value="denhaag-theme">Den Haag</option>
             <option value="utrecht-theme" selected>
               Gemeente Utrecht
             </option>
