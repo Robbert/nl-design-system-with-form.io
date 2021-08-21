@@ -8,7 +8,7 @@ import './config';
 import { AuthProvider } from './modules/auth';
 import '@utrecht/component-library-css/dist/bem.css';
 import { components, templates } from '@utrecht/component-library-formio';
-import '@utrecht/design-tokens/dist/index.css';
+import '@utrecht/design-tokens/dist/theme/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 
 Formio.use({ components });

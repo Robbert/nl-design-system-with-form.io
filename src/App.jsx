@@ -36,6 +36,7 @@ function App() {
     script.src = "https://unpkg.com/@utrecht/web-component-library-stencil@latest/dist/utrecht/utrecht.esm.js";
     script.type = "module";
     document.body.appendChild(script);
+    document.body.className = "utrecht-theme";
   }, []);
 
   return (
@@ -62,10 +63,9 @@ function App() {
           rel="stylesheet"
           href="https://unpkg.com/@nl-design-system-unstable/duo-design-tokens/dist/theme/index.css"
         />
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@utrecht/design-tokens/dist/theme/index.css" />
         <div className="theme-switcher">
           <label htmlFor="theme">Theme:</label>
-          <select id="theme" onChange={(evt) => (document.documentElement.className = evt.target.value)}>
+          <select id="theme" onChange={(evt) => (document.body.className = evt.target.value)}>
             <option value="duo-theme">DUO</option>
             <option value="amsterdam-theme">Gemeente Amsterdam</option>
             <option value="denhaag-theme">Den Haag</option>
