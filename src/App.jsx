@@ -63,11 +63,13 @@ function App() {
           rel="stylesheet"
           href="https://unpkg.com/@nl-design-system-unstable/duo-design-tokens/dist/theme/index.css"
         />
+        <link rel="stylesheet" href="https://unpkg.com/@gemeente-haarlem/design-tokens/dist/index.css" />
         <div className="theme-switcher">
           <label htmlFor="theme">Theme:</label>
           <select id="theme" onChange={(evt) => (document.body.className = evt.target.value)}>
             <option value="duo-theme">DUO</option>
             <option value="amsterdam-theme">Gemeente Amsterdam</option>
+            <option value="haarlem-theme">Gemeente Haarlem</option>
             <option value="denhaag-theme">Den Haag</option>
             <option value="utrecht-theme" selected>
               Gemeente Utrecht
