@@ -35,8 +35,6 @@ function App() {
     const script = document.createElement("script");
     script.src = "https://unpkg.com/@utrecht/web-component-library-stencil@latest/dist/utrecht/utrecht.esm.js";
     script.type = "module";
-    document.body.appendChild(script);
-    document.body.className = "utrecht-theme";
   }, []);
 
   return (
@@ -51,30 +49,8 @@ function App() {
       ) : null}
       <UtrechtDocument>
         <UtrechtHeading1>NL Design System with form.io</UtrechtHeading1>
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/@nl-design-system-unstable/amsterdam-design-tokens/dist/theme/index.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/@nl-design-system-unstable/rijkshuisstijl-design-tokens/dist/theme/index.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/@nl-design-system-unstable/duo-design-tokens/dist/theme/index.css"
-        />
-        <link rel="stylesheet" href="https://unpkg.com/@gemeente-haarlem/design-tokens/dist/index.css" />
         <div className="theme-switcher">
-          <label htmlFor="theme">Theme:</label>
-          <select id="theme" onChange={(evt) => (document.body.className = evt.target.value)}>
-            <option value="duo-theme">DUO</option>
-            <option value="amsterdam-theme">Gemeente Amsterdam</option>
-            <option value="haarlem-theme">Gemeente Haarlem</option>
-            <option value="denhaag-theme">Den Haag</option>
-            <option value="utrecht-theme" selected>
-              Gemeente Utrecht
-            </option>
-          </select>
+          <nl-theme-switcher></nl-theme-switcher>
         </div>
         <Form src={`${AppConfig.projectUrl}/test`} options={{ sanitizeConfig }} />
         <UtrechtPageFooter>© 2021 Robbert Broersma</UtrechtPageFooter>
